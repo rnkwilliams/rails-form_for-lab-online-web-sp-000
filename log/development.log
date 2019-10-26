@@ -421,3 +421,12 @@ Redirected to http://67.205.165.109:34722/students/1%2F2
 Completed 302 Found in 46ms (ActiveRecord: 5.6ms)
 
 
+Started GET "/students/1%2F2" for 69.222.119.42 at 2019-10-26 23:37:04 +0000
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1/2"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.1ms)
+
+
